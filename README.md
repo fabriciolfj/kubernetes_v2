@@ -39,3 +39,10 @@
 #### Eficiência na operação
 - Utilizar os recursos com conciência
 - Ter alta disponibilidade
+
+### Escalabilidade e elasticidade
+#### HPA(horizontal pod autoscaler)
+- dimensiona o número de pods com base em um limite de métricas específicas, pode ser cpu ou memória.
+
+#### VPA(vertical pod autoscaler)
+- dimensiona o pod verficalmente, aumentando seus limites de cpu e memória, de acordo com as métricas de uso do pod.
