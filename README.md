@@ -1,5 +1,7 @@
 # Melhores práticas para uso do kubernetes em produção
 
+![Alt text](https://github.com/fabriciolfj/kubernetes_v2/blob/main/kubernetes.png)
+
 ### 12 principios de design para infraestrutura
 
 #### Comece gerenciado
