@@ -1,5 +1,7 @@
 # Melhores práticas para uso do kubernetes em produção
 
+![Alt text](https://github.com/fabriciolfj/kubernetes_v2/blob/main/kubernetes.png)
+
 ### 12 principios de design para infraestrutura
 
 #### Comece gerenciado
@@ -46,3 +48,18 @@
 
 #### VPA(vertical pod autoscaler)
 - dimensiona o pod verficalmente, aumentando seus limites de cpu e memória, de acordo com as métricas de uso do pod.
+
+### Desafios operacionais com kubernetes
+- algumas práticas e padrões de infraestrutura que atenuam alguns desafios, como:
+  - IAC -> utilize infraestrutura como código
+  - Automação
+  - Padronização
+  - unica fonte de verdade 
+
+# Montando o cluster
+### Definindo a configuração terraform
+- Como boa prática o arquivo state do terraform deve ser armazenado remotamente, compartilhado e bloqueado quando está em uso (usaremos o dynamodb pra tal tarefa).
+- Teremos o s3 cluster_tf_state_s3_bucket para armazenamento do tfstate 
+- O s3 cluster_vpc_tf_state_s3_bucket guardará dados dos recursos de rede
+- a tabela cluster_dynamodb_tf_state_lock efetuar o bloqueio do tf state
+- e a tabela cluster_dynamodb_vpc_tf_state_lock efetuará o bloqueio dos recursos de rede
