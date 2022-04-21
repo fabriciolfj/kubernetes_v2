@@ -48,3 +48,10 @@
 
 #### VPA(vertical pod autoscaler)
 - dimensiona o pod verficalmente, aumentando seus limites de cpu e memória, de acordo com as métricas de uso do pod.
+
+### Desafios operacionais com kubernetes
+- algumas práticas e padrões de infraestrutura que atenuam alguns desafios, como:
+  - IAC -> utilize infraestrutura como código
+  - Automação
+  - Padronização
+  - unica fonte de verdade 
