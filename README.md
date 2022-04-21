@@ -58,6 +58,8 @@
 
 # Montando o cluster
 ### Definindo a configuração terraform
-- Como boa prática o arquivo state do terraform deve ser armazenado remotamente e compartilhado
+- Como boa prática o arquivo state do terraform deve ser armazenado remotamente, compartilhado e bloqueado quando está em uso (usaremos o dynamodb pra tal tarefa).
 - Teremos o s3 cluster_tf_state_s3_bucket para armazenamento do tfstate 
 - O s3 cluster_vpc_tf_state_s3_bucket guardará dados dos recursos de rede
+- a tabela cluster_dynamodb_tf_state_lock efetuar o bloqueio do tf state
+- e a tabela cluster_dynamodb_vpc_tf_state_lock efetuará o bloqueio dos recursos de rede
