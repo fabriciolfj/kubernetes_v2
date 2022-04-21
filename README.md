@@ -56,3 +56,8 @@
   - Padronização
   - unica fonte de verdade 
 
+# Montando o cluster
+### Definindo a configuração terraform
+- Como boa prática o arquivo state do terraform deve ser armazenado remotamente e compartilhado
+- Teremos o s3 cluster_tf_state_s3_bucket para armazenamento do tfstate 
+- O s3 cluster_vpc_tf_state_s3_bucket guardará dados dos recursos de rede
