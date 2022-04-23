@@ -66,3 +66,11 @@
 
 ### Criando as redes para nosso cluster
 - Dentro do diretório terraform/clusters-vpc, encontra-se os arquivos .tf que criarão a nossa vpc, subnets privadas e publicas, nat, tabela de roteamento e gateway.
+
+### Criando o cluster
+- Dentro do diretório terraform/clusters, encontra-se os arquivos .tf para implementação do cluster, utilizando os módulos deste projeto.
+- no arquivo terraform.tfvars, alguns valores são resultado do output vpc, para isso execute o comando na pasta clusters-vpc:
+```
+terraform output
+```
+
