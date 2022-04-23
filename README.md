@@ -63,3 +63,6 @@
 - O s3 cluster_vpc_tf_state_s3_bucket guardará dados dos recursos de rede
 - a tabela cluster_dynamodb_tf_state_lock efetuar o bloqueio do tf state
 - e a tabela cluster_dynamodb_vpc_tf_state_lock efetuará o bloqueio dos recursos de rede
+
+### Criando as redes para nosso cluster
+- Dentro do diretório terraform/clusters-vpc, encontra-se os arquivos .tf que criarão a nossa vpc, subnets privadas e publicas, nat, tabela de roteamento e gateway.
