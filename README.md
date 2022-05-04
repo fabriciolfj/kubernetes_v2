@@ -74,3 +74,11 @@
 terraform output
 ```
 
+### Ansible
+- utilizado para uso de configuração de clsuter kubernetes via código
+- utiliza um template dos manifestos e substitui as variaveis por valores configurados
+- possui alguns recursos chaves, como:
+  - inventory: utilizado para agrupar hosts semelhantes em grupos
+  - modulos: reuso de tarefas, contra os inventários
+  - task: descreve os passos que o ansible deve fazer, por ex: instalar tal software 
+  - playbooks: são construções do ansible, que envolve outros blocos, como variáveis, task e módulos
