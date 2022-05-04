@@ -82,3 +82,5 @@ terraform output
   - modulos: reuso de tarefas, contra os inventários
   - task: descreve os passos que o ansible deve fazer, por ex: instalar tal software 
   - playbooks: são construções do ansible, que envolve outros blocos, como variáveis, task e módulos
+  - variaveis: para manter os valores para a configuração
+  - templates: modelos com variáveis, que essas depois serão substituidas por valores.
