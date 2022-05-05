@@ -69,6 +69,13 @@
 
 ### Criando o cluster
 - Dentro do diretório terraform/clusters, encontra-se os arquivos .tf para implementação do cluster, utilizando os módulos deste projeto.
+
+```
+terraform init
+terraform workspace new prod1
+terraform plan
+terraform apply --auto-approve
+```
 - no arquivo terraform.tfvars, alguns valores são resultado do output vpc, para isso execute o comando na pasta clusters-vpc:
 ```
 terraform output
