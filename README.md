@@ -69,8 +69,25 @@
 
 ### Criando o cluster
 - Dentro do diretório terraform/clusters, encontra-se os arquivos .tf para implementação do cluster, utilizando os módulos deste projeto.
+
+```
+terraform init
+terraform workspace new prod1
+terraform plan
+terraform apply --auto-approve
+```
 - no arquivo terraform.tfvars, alguns valores são resultado do output vpc, para isso execute o comando na pasta clusters-vpc:
 ```
 terraform output
 ```
 
+### Ansible
+- utilizado para uso de configuração de clsuter kubernetes via código
+- utiliza um template dos manifestos e substitui as variaveis por valores configurados
+- possui alguns recursos chaves, como:
+  - inventory: utilizado para agrupar hosts semelhantes em grupos
+  - modulos: reuso de tarefas, contra os inventários
+  - task: descreve os passos que o ansible deve fazer, por ex: instalar tal software 
+  - playbooks: são construções do ansible, que envolve outros blocos, como variáveis, task e módulos
+  - variaveis: para manter os valores para a configuração
+  - templates: modelos com variáveis, que essas depois serão substituidas por valores.
