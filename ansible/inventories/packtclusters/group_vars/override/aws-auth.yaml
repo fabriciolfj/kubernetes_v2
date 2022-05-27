@@ -2,9 +2,9 @@ map_roles:
   workers_roles: 
     - "{{ worker_iam_role_arn }}"
   system_masters:
-    - "arn:aws:iam::111111111111:role/admin-role"
+    - "arn:aws:iam::219179801810:role/admin"
 map_users:
   system_masters:
-    - arn: "arn:aws:iam::111111111111:user/packtclusters-admin"
+    - arn: "arn:aws:iam::219179801810:user/admin"
       name: "packtclusters.admin"
 

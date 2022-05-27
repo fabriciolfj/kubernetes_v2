@@ -11,9 +11,9 @@
     k8s_manifests_state: present
     k8s_force: false
     k8s_no_log: false
-    
+
   tasks:
-  - import_tasks: tasks/aws-auth.yaml
-    tags: aws-auth
-  - import_tasks: tasks/namespaces.yaml
-    tags: namespaces
+    - import_tasks: tasks/aws-auth.yaml
+      tags: aws-auth
+    - import_tasks: tasks/namespaces.yaml
+      tags: namespaces
