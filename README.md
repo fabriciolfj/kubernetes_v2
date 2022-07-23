@@ -73,6 +73,7 @@
 ```
 terraform init
 terraform workspace new prod1
+terraform workspace select prod1
 terraform plan
 terraform apply --auto-approve
 ```

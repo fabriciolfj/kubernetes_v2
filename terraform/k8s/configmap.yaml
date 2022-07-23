@@ -1,0 +1,48 @@
+piVersion: v1
+kind: ConfigMap
+metadata:
+  name: config-product
+data:
+  application.yml: |-
+                    spring:
+                      jmx:
+                        enabled: false
+                      config:
+                        location: classpath:/application.yml
+                      main:
+                        lazy-initialization: true
+                      datasource:
+                        url: jdbc:mysql://my-release-mysql:3306/product
+                        username: root
+                        password: root
+                        driver-class-name: com.mysql.cj.jdbc.Driver
+                      application:
+                        name: product
+                      flyway:
+                        locations:
+                          - classpath:db/migration
+                          - classpath:db/testdata
+                      jpa:
+                        properties:
+                          hibernate.dialect: org.hibernate.dialect.MySQL8Dialect
+                        hibernate:
+                          ddl-auto: none
+                        show-sql: true
+                    management:
+                      endpoints:
+                        web:
+                          exposure:
+                            include: "*"
+                      metrics:
+                        export:
+                          prometheus:
+                            enabled: true
+                      endpoint:
+                        metrics:
+                          enabled: false
+                        prometheus:
+                          enabled: true
+                
+                    logging:
+                      level:
+                        org.springframework.boot.autoconfigure: INFO

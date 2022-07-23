@@ -1,18 +1,16 @@
 aws_region = "sa-east-1"
 
 private_subnet_ids = [
-  "subnet-041875bb24f6c1867",
-  "subnet-0e732736850dd0d38",
-  "subnet-08c5cb9b98cdcc435",
+  "subnet-086aac2a3857325de",
+  "subnet-03661ef73bdb41d86",
+  "subnet-090394720d5ba0728",
 ]
 public_subnet_ids = [
-  "subnet-07f7407eb3f5ba8ad",
-  "subnet-004f379a1f0b833db",
-  "subnet-09ad337f1af371d48",
+  "subnet-0303eb955450d4ac3",
+  "subnet-0f4c9ac7630419fae",
+  "subnet-0b910ceb9ce6731b3",
 ]
-vpc_id = "vpc-076e738e37a0558ae"
-
-
+vpc_id = "vpc-0af510eb544e8ec34"
 
 clusters_name_prefix  = "fabriciolfj"
 cluster_version       = "1.20"

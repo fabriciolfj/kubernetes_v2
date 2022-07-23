@@ -10,6 +10,8 @@ resource "aws_security_group" "workers" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 
+
+
   tags = merge(
     var.common_tags,
     {
