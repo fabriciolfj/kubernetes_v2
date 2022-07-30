@@ -81,6 +81,10 @@ terraform apply --auto-approve
 ```
 terraform output
 ```
+- para instalar load balance dentro do cluster:
+````
+https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html
+````
 
 ### Ansible
 - utilizado para uso de configuração de clsuter kubernetes via código

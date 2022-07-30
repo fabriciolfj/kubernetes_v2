@@ -1,1 +1,1 @@
-aws eks --region sa-east-1 update-kubeconfig --name fabriciolfj-default
+aws eks --region sa-east-1 update-kubeconfig --name fab211-default

@@ -13,15 +13,3 @@ output "cluster_version" {
 output "cluster_api" {
   value = module.cluster.cluster_api
 }
-
-output "cluster_tag" {
-  value = module.cluster.cluster_tag
-}
-
-output "worker_iam_role_arn" {
-  value = module.cluster.worker_iam_role_arn
-}
-
-output "authconfig" {
-  value = module.cluster.authconfig
-}

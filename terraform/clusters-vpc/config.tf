@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "fabricio211-vpc-terraform-state"
-    key            = "fabricio211-vpc.tfstate"
+    bucket         = "fab211-vpc-terraform-state"
+    key            = "fab211-vpc.tfstate"
     region         = "sa-east-1"
-    dynamodb_table = "fabricio211-vpc-terraform-state-lock-dynamodb"
+    dynamodb_table = "fab211-vpc-terraform-state-lock-dynamodb"
   }
   required_providers {
     aws = {

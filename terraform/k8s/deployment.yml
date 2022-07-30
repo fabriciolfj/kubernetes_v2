@@ -55,9 +55,9 @@ metadata:
   labels:
     app: product-service
 spec:
-  type: ClusterIP
   ports:
     - port: 8080
       name: http
+  type: LoadBalancer
   selector:
     app: product-service

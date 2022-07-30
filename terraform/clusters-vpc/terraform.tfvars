@@ -1,5 +1,5 @@
 aws_region           = "sa-east-1"
-clusters_name_prefix = "fabriciolfj"
+clusters_name_prefix = "fab211"
 vpc_block            = "10.40.0.0/17"
 public_subnets_prefix_list = [
   "10.40.0.0/20",
